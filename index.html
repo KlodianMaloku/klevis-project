@@ -1,0 +1,365 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Albanian Nature & Museums - Discover Albania's Treasures</title>
+    
+    <!-- Bootstrap 5 CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Bootstrap Icons -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
+    
+    <style>
+        .hero-section {
+            background: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url('images/albania-landscape.jpg');
+            background-size: cover;
+            background-position: center;
+            height: 60vh;
+            display: flex;
+            align-items: center;
+            color: white;
+            text-align: center;
+        }
+        
+        .card-img-top {
+            height: 250px;
+            object-fit: cover;
+        }
+        
+        .attraction-card {
+            transition: transform 0.3s ease;
+            height: 100%;
+        }
+        
+        .attraction-card:hover {
+            transform: translateY(-5px);
+        }
+        
+        .section-title {
+            color: #2c5530;
+            font-weight: bold;
+            margin-bottom: 3rem;
+        }
+        
+        .btn-custom {
+            background-color: #d4351c;
+            border-color: #d4351c;
+            color: white;
+        }
+        
+        .btn-custom:hover {
+            background-color: #b82d1a;
+            border-color: #b82d1a;
+            color: white;
+        }
+        
+        footer {
+            background-color: #2c5530;
+            color: white;
+        }
+        
+        .navbar-brand {
+            font-weight: bold;
+            color: #2c5530 !important;
+        }
+    </style>
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-light shadow-sm">
+        <div class="container">
+            <a class="navbar-brand" href="#">
+                <i class="bi bi-mountain"></i> Albanian Treasures
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link active" href="#home">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#nature">Nature</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#museums">Museums</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#contact">Contact</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero-section">
+        <div class="container">
+            <div class="row">
+                <div class="col-12">
+                    <h1 class="display-4 fw-bold mb-4">Discover Albania's Natural Wonders</h1>
+                    <p class="lead mb-4">Explore breathtaking landscapes, rich cultural heritage, and world-class museums</p>
+                    <a href="#nature" class="btn btn-custom btn-lg">Start Exploring</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Nature Attractions -->
+    <section id="nature" class="py-5">
+        <div class="container">
+            <div class="row">
+                <div class="col-12 text-center">
+                    <h2 class="section-title">Natural Attractions</h2>
+                </div>
+            </div>
+            <div class="row g-4">
+                <div class="col-lg-4 col-md-6">
+                    <div class="card attraction-card shadow">
+                        <img src="images/blue-eye.jpg" class="card-img-top" alt="Blue Eye Spring">
+                        <div class="card-body">
+                            <h5 class="card-title">Blue Eye (Syri i Kaltër)</h5>
+                            <p class="card-text">A stunning natural spring with crystal-clear blue water, located near Sarandë. This magical water source is over 50 meters deep and maintains a constant temperature.</p>
+                            <div class="d-flex justify-content-between align-items-center">
+                                <span class="badge bg-success">Natural Spring</span>
+                                <small class="text-muted"><i class="bi bi-geo-alt"></i> Sarandë</small>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-4 col-md-6">
+                    <div class="card attraction-card shadow">
+                        <img src="images/llogara-pass.jpg" class="card-img-top" alt="Llogara Pass">
+                        <div class="card-body">
+                            <h5 class="card-title">Llogara Pass</h5>
+                            <p class="card-text">Breathtaking mountain pass offering panoramic views of the Albanian Riviera and Ionian Sea. Perfect for hiking and photography enthusiasts.</p>
+                            <div class="d-flex justify-content-between align-items-center">
+                                <span class="badge bg-primary">Mountain Pass</span>
+                                <small class="text-muted"><i class="bi bi-geo-alt"></i> Vlorë</small>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-4 col-md-6">
+                    <div class="card attraction-card shadow">
+                        <img src="images/theth-national-park.jpg" class="card-img-top" alt="Theth National Park">
+                        <div class="card-body">
+                            <h5 class="card-title">Theth National Park</h5>
+                            <p class="card-text">A pristine alpine park in the Albanian Alps featuring waterfalls, traditional stone houses, and excellent hiking trails through untouched wilderness.</p>
+                            <div class="d-flex justify-content-between align-items-center">
+                                <span class="badge bg-success">National Park</span>
+                                <small class="text-muted"><i class="bi bi-geo-alt"></i> Shkodër</small>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-4 col-md-6">
+                    <div class="card attraction-card shadow">
+                        <img src="images/karaburun-peninsula.jpg" class="card-img-top" alt="Karaburun Peninsula">
+                        <div class="card-body">
+                            <h5 class="card-title">Karaburun Peninsula</h5>
+                            <p class="card-text">Untouched coastal wilderness featuring dramatic cliffs, hidden beaches, and marine protected areas. Accessible only by boat or hiking.</p>
+                            <div class="d-flex justify-content-between align-items-center">
+                                <span class="badge bg-info">Marine Park</span>
+                                <small class="text-muted"><i class="bi bi-geo-alt"></i> Vlorë</small>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-4 col-md-6">
+                    <div class="card attraction-card shadow">
+                        <img src="images/ohrid-lake.jpg" class="card-img-top" alt="Lake Ohrid">
+                        <div class="card-body">
+                            <h5 class="card-title">Lake Ohrid</h5>
+                            <p class="card-text">One of Europe's oldest and deepest lakes, shared with North Macedonia. A UNESCO World Heritage site known for its endemic species and crystal-clear waters.</p>
+                            <div class="d-flex justify-content-between align-items-center">
+                                <span class="badge bg-primary">UNESCO Site</span>
+                                <small class="text-muted"><i class="bi bi-geo-alt"></i> Pogradec</small>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-4 col-md-6">
+                    <div class="card attraction-card shadow">
+                        <img src="images/divjaka-national-park.jpg" class="card-img-top" alt="Divjakë-Karavasta National Park">
+                        <div class="card-body">
+                            <h5 class="card-title">Divjakë-Karavasta National Park</h5>
+                            <p class="card-text">Coastal wetland paradise home to the largest lagoon in Albania and the endangered Dalmatian pelican. Perfect for birdwatching and nature photography.</p>
+                            <div class="d-flex justify-content-between align-items-center">
+                                <span class="badge bg-success">Wetland Park</span>
+                                <small class="text-muted"><i class="bi bi-geo-alt"></i> Fier</small>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Museums Section -->
+    <section id="museums" class="py-5 bg-light">
+        <div class="container">
+            <div class="row">
+                <div class="col-12 text-center">
+                    <h2 class="section-title">Cultural Museums</h2>
+                </div>
+            </div>
+            <div class="row g-4">
+                <div class="col-lg-4 col-md-6">
+                    <div class="card attraction-card shadow">
+                        <img src="images/national-history-museum.jpg" class="card-img-top" alt="National History Museum">
+                        <div class="card-body">
+                            <h5 class="card-title">National History Museum</h5>
+                            <p class="card-text">Albania's largest museum showcasing the country's history from prehistoric times to the present. Features the famous mosaic "The Albanians" on its facade.</p>
+                            <div class="d-flex justify-content-between align-items-center">
+                                <span class="badge bg-warning">History</span>
+                                <small class="text-muted"><i class="bi bi-geo-alt"></i> Tirana</small>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-4 col-md-6">
+                    <div class="card attraction-card shadow">
+                        <img src="images/bunk-art.jpg" class="card-img-top" alt="BunkArt Museum">
+                        <div class="card-body">
+                            <h5 class="card-title">BunkArt Museum</h5>
+                            <p class="card-text">Unique museum housed in a former communist-era bunker, offering insights into Albania's totalitarian past through contemporary art and historical exhibitions.</p>
+                            <div class="d-flex justify-content-between align-items-center">
+                                <span class="badge bg-dark">Contemporary Art</span>
+                                <small class="text-muted"><i class="bi bi-geo-alt"></i> Tirana</small>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-4 col-md-6">
+                    <div class="card attraction-card shadow">
+                        <img src="images/marubi-museum.jpg" class="card-img-top" alt="Marubi National Museum of Photography">
+                        <div class="card-body">
+                            <h5 class="card-title">Marubi National Museum</h5>
+                            <p class="card-text">The first photography museum in the Balkans, housing over 500,000 negatives documenting Albanian life from the 1850s onwards.</p>
+                            <div class="d-flex justify-content-between align-items-center">
+                                <span class="badge bg-secondary">Photography</span>
+                                <small class="text-muted"><i class="bi bi-geo-alt"></i> Shkodër</small>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-4 col-md-6">
+                    <div class="card attraction-card shadow">
+                        <img src="images/onufri-museum.jpg" class="card-img-top" alt="Onufri Museum">
+                        <div class="card-body">
+                            <h5 class="card-title">Onufri Museum</h5>
+                            <p class="card-text">Located inside Berat Castle, this museum showcases the works of Onufri, a renowned 16th-century Albanian icon painter, and other religious art.</p>
+                            <div class="d-flex justify-content-between align-items-center">
+                                <span class="badge bg-info">Religious Art</span>
+                                <small class="text-muted"><i class="bi bi-geo-alt"></i> Berat</small>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-4 col-md-6">
+                    <div class="card attraction-card shadow">
+                        <img src="images/ethnographic-museum.jpg" class="card-img-top" alt="Ethnographic Museum">
+                        <div class="card-body">
+                            <h5 class="card-title">Ethnographic Museum</h5>
+                            <p class="card-text">Housed in the birthplace of Enver Hoxha, this museum displays traditional Albanian folk costumes, crafts, and cultural artifacts from different regions.</p>
+                            <div class="d-flex justify-content-between align-items-center">
+                                <span class="badge bg-success">Folk Culture</span>
+                                <small class="text-muted"><i class="bi bi-geo-alt"></i> Gjirokastër</small>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-4 col-md-6">
+                    <div class="card attraction-card shadow">
+                        <img src="images/archaeological-museum.jpg" class="card-img-top" alt="Archaeological Museum">
+                        <div class="card-body">
+                            <h5 class="card-title">Archaeological Museum</h5>
+                            <p class="card-text">Features artifacts from ancient Illyrian, Greek, and Roman periods found throughout Albania, including beautiful mosaics and sculptures.</p>
+                            <div class="d-flex justify-content-between align-items-center">
+                                <span class="badge bg-primary">Archaeology</span>
+                                <small class="text-muted"><i class="bi bi-geo-alt"></i> Durrës</small>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Call to Action -->
+    <section class="py-5 bg-dark text-white">
+        <div class="container">
+            <div class="row">
+                <div class="col-12 text-center">
+                    <h2 class="mb-4">Ready to Explore Albania?</h2>
+                    <p class="lead mb-4">Discover the hidden gems of the Balkans and create unforgettable memories</p>
+                    <a href="#contact" class="btn btn-custom btn-lg me-3">Plan Your Visit</a>
+                    <a href="#" class="btn btn-outline-light btn-lg">Learn More</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer id="contact" class="py-4">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6">
+                    <h5><i class="bi bi-mountain"></i> Albanian Treasures</h5>
+                    <p class="mb-3">Showcasing the natural beauty and cultural heritage of Albania.</p>
+                    <div class="d-flex">
+                        <a href="#" class="text-white me-3"><i class="bi bi-facebook"></i></a>
+                        <a href="#" class="text-white me-3"><i class="bi bi-instagram"></i></a>
+                        <a href="#" class="text-white me-3"><i class="bi bi-twitter"></i></a>
+                        <a href="#" class="text-white"><i class="bi bi-youtube"></i></a>
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <h5>Contact Information</h5>
+                    <p class="mb-1"><i class="bi bi-envelope"></i> info@albaniantreasures.com</p>
+                    <p class="mb-1"><i class="bi bi-phone"></i> +355 (0) 123 456 789</p>
+                    <p class="mb-0"><i class="bi bi-geo-alt"></i> Tirana, Albania</p>
+                </div>
+            </div>
+            <hr class="my-4">
+            <div class="row">
+                <div class="col-12 text-center">
+                    <p class="mb-0">&copy; 2024 Albanian Treasures. All rights reserved.</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Bootstrap 5 JavaScript Bundle -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+    
+    <!-- Smooth scrolling script -->
+    <script>
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                const target = document.querySelector(this.getAttribute('href'));
+                if (target) {
+                    target.scrollIntoView({
+                        behavior: 'smooth',
+                        block: 'start'
+                    });
+                }
+            });
+        });
+    </script>
+</body>
+</html> 
